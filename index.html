@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="icon" href="assets/images/icons8-todo-list-50.png" type="image/png">
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="menu-item title">
+        <div class="content">
+          Menu
+        </div>
+        <div class="icon">
+          <img src="assets/images/icons8-menu.svg" alt="menu">
+        </div>
+      </div>
+      <div class="menu-item search">
+          <input type="text" placeholder="search..." id="search-btn" onkeyup="search()">
+      </div>
+      <div class="menu-item menu-tasks">
+        <div class="title">tasks</div>
+        <div class="sub-item upcoming "onmouseenter="clickEffect(this)" onmouseleave="clickEffect(this)">
+          <div class="icon">
+            <img src="assets/images/icons8-double-arrow-50.png" alt="upcoming">
+          </div>
+          <div class="content">Upcoming</div>
+          <div class="number">0</div>
+        </div>
+        <div class="sub-item today" onmouseenter="clickEffect(this)" onmouseleave="clickEffect(this)">
+          <div class="icon">
+            <img src="assets/images/icons8-to-do-list-today-icon.png" alt="today">
+          </div>
+          <div class="content">Today</div>
+          <div class="number">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="task-container">
+      <div class="task-item title today">
+        <div class="content">Today</div>
+        <div class="number">0</div>
+      </div>
+      <div class="task-item add-btn">
+        <img class="icon" src="assets/images/icons8-plus.svg" alt="adding" onmouseenter="clickEffect(this)" onmouseleave="clickEffect(this)">
+        <div class="content">Add a new task</div>
+      </div>
+      <div class="task-item task-subject inactive active " >
+        <div class="input c1">
+          <input type="text" placeholder="Enter Task Subject..">
+        </div>
+        <div class="c2">
+          <div class="cancel" onmouseenter="clickEffect(this)" onmouseleave="clickEffect(this)">
+            <button id="cancel">Cancel</button>
+          </div>
+          <div class="save" onmouseenter="clickEffect(this)" onmouseleave="clickEffect(this)">
+            <button id="save">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="task-item tasks">
+        <div class="title">
+          <div class="icon">
+            <img src="assets/images/icons8-task-50.png" alt="tasks">
+          </div>
+          <div class="content">Tasks</div>
+        </div>
+
+      </div>
+      <div class="task-item done-tasks">
+        <div class="title">
+          <div class="icon">
+            <img src="assets/images/icons8-check-50.png" alt="checkbox icon" >
+          </div>
+          <div class="content">Done Tasks</div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <!-- <div class="task-making-container">
+      <div class="title">
+        <div class="content">Today</div>
+        <div class="number">0</div>
+      </div>
+      <div class="task-add">
+        <div class="icon"></div>
+      </div>
+    </div> -->
+  <script src="script.js"></script>
+  </body>
+</html>
